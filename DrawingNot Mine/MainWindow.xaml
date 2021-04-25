@@ -1,0 +1,95 @@
+﻿<Window
+    x:Class="FractalTree.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Name="Window"
+    Title="BinaryTree"
+    Width="1319"
+    Height="920"
+    FontSize="40"
+    Background="LightGray"
+    WindowState="Maximized">
+
+
+
+    <Grid
+        Height="893"
+        Margin="0,0,0,11"
+        VerticalAlignment="Bottom">
+        <TextBlock
+            Name="tbLabel"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Bottom"
+            FontSize="20" Margin="0,0,104,171" />
+        <Canvas
+            x:Name="mother"
+            Width="500"
+            Height="500"
+            Margin="0,150,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top">
+            <Canvas
+                x:Name="canvas1"
+                Width="750"
+                Height="750"
+                Background="#FF4D4D4D" />
+        </Canvas>
+        <Button
+            x:Name="btnStart"
+            MinHeight="20"
+            MaxWidth="100"
+            VerticalAlignment="Bottom"
+            Click="btnStart_Click"
+            Content="Start"
+            FontFamily="Times New Roman"
+            FontSize="16"
+            FontWeight="Bold" Margin="777,0,17,40" Height="61" />
+        <TextBox
+            Name="delta"
+            Margin="0,287,80,0"
+           HorizontalAlignment="Right"
+            VerticalAlignment="Top"
+            Text="0.75"
+            TextWrapping="Wrap" />
+        <TextBox
+            Name="thiccnessss"
+            Margin="0,370,80,0"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Top"
+            Text="0.8"
+            TextWrapping="Wrap" />
+        <TextBox
+            
+            
+            Name="lenght"
+            Margin="0,469,80,0"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Top"
+            Text="0.4"
+            TextWrapping="WrapWithOverflow" Width="147" />
+        <TextBlock
+           
+            Margin="0,288,182,0"
+           HorizontalAlignment="Right"
+            VerticalAlignment="Top"
+            Text="Lenght Scale:"
+            TextWrapping="Wrap" />
+        <TextBlock
+            
+            Margin="0,370,181,0"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Top"
+            Text="Thiccness Scale:"
+            TextWrapping="Wrap" />
+        <TextBlock
+            
+           
+            Margin="0,465,282,0"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Top"
+            Text="Delta:"
+            TextWrapping="Wrap" />
+
+    </Grid>
+
+</Window>
